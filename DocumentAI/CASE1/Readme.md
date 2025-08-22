@@ -3,7 +3,7 @@
 **Copyright (c) 2025 IKI CLOUD**
 
 This repository is provided by IKI CLOUD for demonstration and proof-of-concept (POC) purposes.  
-It is released under the **MIT License** (see `LICENSE`).
+It is released under the **MIT License**, see LICENSE.
 
 **Important notice (production use)**  
 You are free to use, modify, and redistribute the code under the MIT License.  
@@ -54,18 +54,6 @@ PDFs → TextExtraction.py → DOCUMENT_RAW
 INSURANCE_POLICY_AI (TEXT_CHUNK, EMBEDDING)
 ↓
 Semantic SQL (cosine top-k)
-
-markdown
-Copia
-Modifica
-
-**Key files**
-- `TextExtraction.py` — calls OCI Document Understanding to extract text from PDFs.
-- `IngestPdfText.py` — inserts full text into `DOCUMENT_RAW` and hashes for dedupe.
-- `PL_SQL.sql` — creates OCI credential and `CHUNK_AND_EMBED_ALL` (chunk + embed).
-- `SemanticSQL.sql` — example of in-DB query embedding and cosine search.
-- `DDL.sql` — table creation for `DOCUMENT_RAW` and `INSURANCE_POLICY_AI`.
-- `USAGE.sh` — example command list (reference only, not executable).
 
 **Notes & limits**
 - Use ISO-639-2 language codes for DU (e.g., `ITA`) or omit for auto-detect.
