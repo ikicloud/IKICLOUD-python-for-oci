@@ -1,0 +1,5 @@
+# python 3.9
+# required libraries
+pip install oci 
+pip install oracledb
+
